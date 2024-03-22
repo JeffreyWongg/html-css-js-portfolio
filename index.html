@@ -3,69 +3,65 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
         <title>Jeffrey's Portfolio</title>
     </head>
-    <body>
         <header>
             <div class="container">
                 <nav>
                     <ul>
                         <li class="logo"><img src="hello.png"></li>
-                        <li><a href="#">ABOUT ME</a></li>
-                        <li><a href="#">EXPERIENCE</a></li>
-                        <li>
-                            <a href="#">
-                                PROJECTS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                CONTACT
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="resume-btn">
-                                    RESUME
-                                </div>
-                            </a>
-                        </li>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#experience">EXPERIENCE</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#resume">
+                            <div class="resume-btn">
+                                RESUME
+                            </div>
+                        </a></li>
                     </ul>
                 </nav>
-                <div class="banner">
-                    <div class="app-text">
-                        <h1>
-                            Hey there,<br>I am Jeffrey Wong!
-                        </h1>
-                        <p>
-                            My goal is to make it far in life in whatever path I decide to take.<br>
-                            My current passions are computer science, STEM, and basketball
-                        </p>
-                        <div class="play-btn">
-                            <div class="play-btn-inner">
-                                <i class="fa-solid fa-basketball"></i>
-                                <small><b>LEARN MORE</b></small>
+                <section class="home" id="home">
+                    <div class="banner">
+                        <div class="app-text">
+                            <h2>Hey there,</h2>
+                            <h1>I am Jeffrey Wong</h1>
+                            <h2>I am a <span>Student</span></h2>
+                            <p>
+                                My goal is to make it far in life in whatever path I decide to take.<br>
+                                My current passions are computer science, STEM, and basketball
+                            </p>
+                            <div class="play-btn">
+                                <div class="play-btn-inner">
+                                    <i class="fa-solid fa-basketball"></i>
+                                    <small><b>LEARN MORE</b></small>
+                                </div>
                             </div>
                         </div>
+                        <div class="app-picture">
+                            <img src="steph-curry.png">
+                        </div>
+                        <div class="quick-links">
+                            <ul>
+                                <li><i class="fa-solid fa-basketball"></i><p>SHARE TO</p></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="app-picture">
-                        <img src="steph-curry.png">
-                    </div>
-                    <div class="quick-links">
-                        <ul>
-                            <li><i class="fa-solid fa-basketball"></i><p>SHARE TO</p></li>
-                        </ul>
-                    </div>
-                </div>
-                
+                </section>            
             </div>
         </header>
-        <div class="about-me">
+
+        </div>
+    <body>
+        <section class="about-me">
             <p> 
                 I am a grade 11 student
             </p>
-        </div>
+        </section>
     </body>
 </html>
