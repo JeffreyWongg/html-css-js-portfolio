@@ -205,3 +205,26 @@ span {
 .projects {
     background: linear-gradient(to bottom, #000000 , #2b2b2b);
 }
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.projects-container .projects-box {
+    flex: 1 1 30rem;
+    background: linear-gradient(to right, #19d7f8, #6b50a9);
+    padding: 3rem 2rem 4rem;
+    border-radius: 3rem;
+    text-align: center;
+    border: 1rem solid #fff;
+    transition: .5s ease;
+}
+
+.projects-container .projects-box:hover{
+    border-color: #fff;
+    transform: scale(1.02);
+}
