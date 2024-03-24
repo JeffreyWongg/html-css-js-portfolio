@@ -6,7 +6,6 @@ menuIcon.onclick = () => {
     navbar.classList.toggle("active");
 };
 
-
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
@@ -32,3 +31,25 @@ window.onscroll = () => {
     menuIcon.classList.remove("bx-x");
     navbar.classList.remove("active");
 };
+
+ScrollReveal ({
+    reset: true,
+    distance: "80px",
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal(".home-content, .heading", {origin: "top"});
+ScrollReveal().reveal(".home-img, .experience-container, .projects-box", {origin: "bottom"});
+
+
+const typed = new Typed(".multiple-text", {
+    strings: ["student", "tech enthusiast", "grade 11"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 100,
+    loop: true
+});
+
+
+
