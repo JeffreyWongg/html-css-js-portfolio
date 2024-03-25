@@ -32,6 +32,14 @@ window.onscroll = () => {
     navbar.classList.remove("active");
 };
 
+document.querySelectorAll(".projects-box").forEach(item =>
+    {
+        item.onmousemove = e => {
+            item.style.setProperty("--x", (e.pageX - item.offsetLeft) + "px");
+            item.style.setProperty("--y", (e.pageY - item.offsetTop) + "px");
+        };
+    });
+
 ScrollReveal ({
     reset: true,
     distance: "80px",

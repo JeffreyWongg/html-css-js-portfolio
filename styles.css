@@ -210,11 +210,29 @@ span {
     text-align: center;
     border: .2rem solid #000;
     transition: .5s ease;
+    backdrop-filter: blur(25px);
+    position: relative;
+    overflow: hidden;
 }
 
 .experience-container .experience-box:hover {
     border-color: #fff;
     transform: scale(1.02);
+}
+
+.experience-box::before {
+    content: " ";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(#19d7f8, transparent, transparent);
+    opacity: 0;
+    transition: 0.5s, top 0s, left 0s;
+}
+
+.experience-box:hover:before {
+    opacity: 1;
 }
 
 .experience-box h3 {
@@ -239,7 +257,8 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 2.5rem;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .projects-container .projects-box {
@@ -248,7 +267,6 @@ span {
     box-shadow : 0 0 1rem #fff;
     overflow: hidden;
     display: flex;
-
 }
 
 .projects-box img {
