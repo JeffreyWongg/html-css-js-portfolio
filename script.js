@@ -52,7 +52,7 @@ ScrollReveal().reveal(".home-img, .experience-container, .projects-box", {origin
 
 
 const typed = new Typed(".multiple-text", {
-    strings: ["student", "tech enthusiast", "grade 11"],
+    strings: ["student", "tech enthusiast", "life-long learner"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 100,
